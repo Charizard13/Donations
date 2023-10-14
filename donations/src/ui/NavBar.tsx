@@ -19,7 +19,17 @@ export default function Navbar() {
           direction: "row",
         }}
       >
-        <Typography level="h1">תרומות ציוד</Typography>
+        <Typography
+          level="h1"
+          component={"a"}
+          href="/"
+          sx={{
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
+          תרומות ציוד
+        </Typography>
         <Button
           color="success"
           component="a"
