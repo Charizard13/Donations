@@ -2,6 +2,7 @@ import * as React from "react";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import { Sheet } from "@mui/joy";
 import { Noto_Sans_Hebrew } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "@/ui/NavBar";
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           >
             <Navbar />
             {children}
+            <Analytics />
           </Sheet>
         </ThemeRegistry>
       </body>
