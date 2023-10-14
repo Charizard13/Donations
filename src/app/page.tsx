@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://donations-roan.vercel.app"),
-  title: "עוברים את זה ביחד",
+  title: "עוברים את זה ביחד", ////
   description: "תרומות ציוד ללוחמים",
   openGraph: {
     images: ["https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/2.webp?t=2023-10-14T15%3A57%3A39.612Z"],
