@@ -5,7 +5,7 @@ import Typography from "@mui/joy/Typography";
 import Link from "next/link";
 import Image from "next/image";
 import PayBoxButton from "./PayBoxButton";
-
+import ShareIconButton from "./ShareIconButton";
 export type DonationCardProps = {
   id: string;
   title: string;
@@ -20,6 +20,7 @@ function DonationCard({ title, date, price, image, description, paymentLink, id 
   return (
     <Link href={`/donations/${id}`} style={{ maxWidth: "100%", textDecoration: "none" }}>
       <Card
+        dir="rtl"
         sx={{
           ":hover": {
             boxShadow: "md",
@@ -31,6 +32,7 @@ function DonationCard({ title, date, price, image, description, paymentLink, id 
         <div>
           <Typography level="title-lg">{title}</Typography>
           <Typography level="body-md">{date}</Typography>
+          <ShareIconButton shareableLink={`https://donations.mui.com/donations/${id}`} title={title} description={description} />
         </div>
         <Typography level="body-sm">{description}</Typography>
         <AspectRatio minHeight="120px" maxHeight="200px" objectFit="contain">
