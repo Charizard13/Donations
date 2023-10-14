@@ -20,7 +20,10 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     metadataBase: new URL(`https://donations-roan.vercel.app/donations/${id}`),
     title: donationCardProps.title,
     description: donationCardProps.description,
+    keywords: donationCardProps.title.split(" "),
     openGraph: {
+      type: "website",
+      siteName: "תרומות לחיילי צה״ל",
       images: [donationCardProps.image, ...previousImages],
       title: donationCardProps.title,
       url: `https://donations-roan.vercel.app/donations/${id}`,
