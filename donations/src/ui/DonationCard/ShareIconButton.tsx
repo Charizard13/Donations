@@ -7,7 +7,8 @@ type ShareIconButtonProps = {
   shareableLink: string;
 };
 export default function ShareIconButton({ shareableLink }: ShareIconButtonProps) {
-  const handleShare = async () => {
+  const handleShare = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.stopPropagation();
     try {
       await navigator.share({
         url: shareableLink,
