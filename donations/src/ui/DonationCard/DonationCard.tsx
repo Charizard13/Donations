@@ -42,7 +42,7 @@ function DonationCard({
         <div>
           <Typography level="title-lg">{title}</Typography>
           <Typography level="body-md">{date}</Typography>
-          <ShareIconButton shareableLink={`https://donations-roan.vercel.app/posts/${id}`} />
+          <ShareIconButton shareableLink={`https://donations-roan.vercel.app/donations/${id}`} />
         </div>
         <Typography level="body-sm">{description}</Typography>
         <AspectRatio minHeight="120px" maxHeight="200px" objectFit="contain">
