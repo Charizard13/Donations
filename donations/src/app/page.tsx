@@ -1,6 +1,6 @@
 import { Stack } from "@mui/joy";
-import type { DonationCardProps } from "../ui/DonationCard";
-import DonationCard from "../ui/DonationCard";
+import type { DonationCardProps } from "../ui/DonationCard/DonationCard";
+import DonationCard from "../ui/DonationCard/DonationCard";
 import { donationsCards } from "@/utils/consts";
 
 export default function Home() {

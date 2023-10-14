@@ -1,4 +1,4 @@
-import DonationCard from "@/ui/DonationCard";
+import DonationCard from "@/ui/DonationCard/DonationCard";
 import { donationsCards } from "@/utils/consts";
 import { Sheet } from "@mui/joy";
 import type { Metadata, ResolvingMetadata } from "next";
@@ -8,7 +8,7 @@ type Props = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata({ params, searchParams }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
   const id = params.id;
   const donationCardProps = donationsCards.find((donationCardProps) => donationCardProps.id === id);
   if (!donationCardProps) throw new Error(`Donation card with id ${id} not found`);
@@ -30,8 +30,9 @@ export default function Page({ params }: { params: { id: string } }) {
   if (!donationCardProps) throw new Error(`Donation card with id ${id} not found`);
   return (
     <Sheet
-      sx={{
+      style={{
         alignSelf: "center",
+        maxWidth: "100%",
       }}
     >
       <DonationCard {...donationCardProps} />
