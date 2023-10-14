@@ -22,8 +22,13 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     description: donationCardProps.description,
     openGraph: {
       images: [donationCardProps.image, ...previousImages],
+      title: donationCardProps.title,
+      url: `https://donations-roan.vercel.app/donations/${id}`,
+      description: donationCardProps.description,
     },
     twitter: {
+      title: donationCardProps.title,
+      description: donationCardProps.description,
       images: [donationCardProps.image, ...previousImages],
     },
   };
