@@ -10,7 +10,7 @@ export const metadata = {
   title: "עוברים את זה ביחד",
   description: "עוברים את זה ביחד",
   openGraph: {
-    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/800px-Flag_of_Israel.svg.png"],
+    images: ["https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/2.webp?t=2023-10-14T15%3A57%3A39.612Z"],
   },
 };
 // If loading a variable font, you don't need to specify the font weight

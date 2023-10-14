@@ -10,7 +10,16 @@ export const donationsCards: DonationCardProps[] = [
       `,
     date: "14/10/2023",
     price: 250,
-    image: "https://northarm.co.il/wp-content/uploads/2019/06/411525-600x600.jpg",
+    image: "https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/1.jpeg?t=2023-10-14T15%3A55%3A04.407Z",
+    paymentLink: "https://www.paypal.com/il/home",
+  },
+  {
+    id: "2",
+    date: "14/10/2023",
+    title: "16 ווסטים עם מגן קרמי",
+    price: 0,
+    description: "מחלקה שנמצאת בחזית עם וסטים ישנים וללא מגנים קרמיים, כל עזרה בהשגת וסטים חדשים אבל הכי חשוב קרמי ל16 חיילים במחלקה יעזור מאוד",
+    image: "https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/3.jpeg?t=2023-10-14T15%3A59%3A16.490Z",
     paymentLink: "https://www.paypal.com/il/home",
   },
 ];

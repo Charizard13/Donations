@@ -3,11 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['northarm.co.il'],
+    domains: ["klvoddikzmytpbewxsir.supabase.co"],
   },
   i18n: {
-    locales: ['en-US', 'he-IL'],
-    defaultLocale: 'he-IL',
+    locales: ["en-US", "he-IL"],
+    defaultLocale: "he-IL",
   },
 };
 
