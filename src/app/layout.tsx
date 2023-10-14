@@ -1,4 +1,3 @@
-import * as React from "react";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import { Sheet } from "@mui/joy";
 import { Noto_Sans_Hebrew } from "next/font/google";
