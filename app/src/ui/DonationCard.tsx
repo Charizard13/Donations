@@ -52,7 +52,7 @@ function DonationCard({ title, date, price, image, description, paymentLink }: D
           aria-label="Explore Bahamas Islands"
           sx={{ mr: "auto", alignSelf: "center", fontWeight: 600 }}
         >
-          תרום
+          תרומה באמצעות Paybox
         </Button>
       </CardContent>
     </Card>
