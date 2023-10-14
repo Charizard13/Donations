@@ -5,15 +5,11 @@ import IosShareRoundedIcon from "@mui/icons-material/IosShareRounded";
 
 type ShareIconButtonProps = {
   shareableLink: string;
-  title: string;
-  description: string;
 };
-export default function ShareIconButton({ shareableLink, title, description }: ShareIconButtonProps) {
+export default function ShareIconButton({ shareableLink }: ShareIconButtonProps) {
   const handleShare = async () => {
     try {
       await navigator.share({
-        title,
-        text: description,
         url: shareableLink,
       });
     } catch (e) {
