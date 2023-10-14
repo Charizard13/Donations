@@ -14,11 +14,19 @@ export type DonationCardProps = {
   description: string;
   image: string;
   paymentLink: string;
-} & {
-  priority: boolean;
 };
-
-function DonationCard({ title, date, price, image, description, paymentLink, id, priority }: DonationCardProps) {
+function DonationCard({
+  title,
+  date,
+  price,
+  image,
+  description,
+  paymentLink,
+  id,
+  priority,
+}: DonationCardProps & {
+  priority: boolean;
+}) {
   return (
     <Link href={`/donations/${id}`} style={{ maxWidth: "100%", textDecoration: "none" }}>
       <Card
