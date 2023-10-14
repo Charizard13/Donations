@@ -18,12 +18,14 @@ export type DonationCardProps = {
 
 function DonationCard({ title, date, price, image, description, paymentLink, id }: DonationCardProps) {
   return (
-    <Link href={`/donations/${id}`} style={{ maxWidth: "100%", width: "400px", textDecoration: "none" }}>
+    <Link href={`/donations/${id}`} style={{ maxWidth: "100%", textDecoration: "none" }}>
       <Card
         sx={{
           ":hover": {
             boxShadow: "md",
           },
+          maxWidth: "100%",
+          width: "400px",
         }}
       >
         <div>
