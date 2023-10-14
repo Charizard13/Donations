@@ -14,9 +14,11 @@ export type DonationCardProps = {
   description: string;
   image: string;
   paymentLink: string;
+} & {
+  priority: boolean;
 };
 
-function DonationCard({ title, date, price, image, description, paymentLink, id }: DonationCardProps) {
+function DonationCard({ title, date, price, image, description, paymentLink, id, priority }: DonationCardProps) {
   return (
     <Link href={`/donations/${id}`} style={{ maxWidth: "100%", textDecoration: "none" }}>
       <Card
@@ -36,7 +38,7 @@ function DonationCard({ title, date, price, image, description, paymentLink, id 
         </div>
         <Typography level="body-sm">{description}</Typography>
         <AspectRatio minHeight="120px" maxHeight="200px" objectFit="contain">
-          <Image src={`${image}?auto=format&fit=crop&w=286`} fill={true} loading="lazy" alt={title} />
+          <Image src={`${image}?auto=format&fit=crop&w=286`} fill={true} priority={priority} alt={title} sizes="(max-width: 768px) 120px, 200px" />
         </AspectRatio>
         <CardContent orientation="horizontal">
           <div>

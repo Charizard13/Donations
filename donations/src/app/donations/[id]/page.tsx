@@ -36,7 +36,7 @@ export default function Page({ params }: { params: { id: string } }) {
         maxWidth: "100%",
       }}
     >
-      <DonationCard {...donationCardProps} />
+      <DonationCard {...donationCardProps} priority={true} />
     </Sheet>
   );
 }

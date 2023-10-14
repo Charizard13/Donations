@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Stack spacing={4} alignItems={"center"}>
       {donationsCards.map((donationCardProps: DonationCardProps) => (
-        <DonationCard {...donationCardProps} key={donationCardProps.id} />
+        <DonationCard {...donationCardProps} key={donationCardProps.id} priority={false} />
       ))}
     </Stack>
   );
