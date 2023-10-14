@@ -6,7 +6,6 @@ import { Noto_Sans_Hebrew } from "next/font/google";
 import Navbar from "@/ui/NavBar";
 
 export const metadata = {
-  metadataBase: new URL("https://donations-roan.vercel.app/"),
   title: "עוברים את זה ביחד",
   description: "עוברים את זה ביחד",
   openGraph: {
