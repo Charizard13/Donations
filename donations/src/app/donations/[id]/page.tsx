@@ -17,9 +17,13 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
+    metadataBase: new URL(`https://donations-roan.vercel.app/donations/${id}`),
     title: donationCardProps.title,
     description: donationCardProps.description,
     openGraph: {
+      images: [donationCardProps.image, ...previousImages],
+    },
+    twitter: {
       images: [donationCardProps.image, ...previousImages],
     },
   };

@@ -9,7 +9,7 @@ export const donationsCards: DonationCardProps[] = [
       עלה 800 עלה ל 1500 ליח׳
       `,
     date: "14/10/2023",
-    price: 250,
+    price: 3000,
     image: "https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/1.jpeg?t=2023-10-14T15%3A55%3A04.407Z",
     paymentLink: "https://www.paypal.com/il/home",
   },
@@ -17,7 +17,7 @@ export const donationsCards: DonationCardProps[] = [
     id: "2",
     date: "14/10/2023",
     title: "16 ווסטים עם מגן קרמי",
-    price: 0,
+    price: 20000,
     description: "מחלקה שנמצאת בחזית עם וסטים ישנים וללא מגנים קרמיים, כל עזרה בהשגת וסטים חדשים אבל הכי חשוב קרמי ל16 חיילים במחלקה יעזור מאוד",
     image: "https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/3.jpeg?t=2023-10-14T15%3A59%3A16.490Z",
     paymentLink: "https://www.paypal.com/il/home",

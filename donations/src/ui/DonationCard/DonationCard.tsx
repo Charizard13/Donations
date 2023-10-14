@@ -15,6 +15,7 @@ export type DonationCardProps = {
   image: string;
   paymentLink: string;
 };
+
 function DonationCard({
   title,
   date,
@@ -41,7 +42,7 @@ function DonationCard({
       >
         <div>
           <Typography level="title-lg">{title}</Typography>
-          <Typography level="body-md">{date}</Typography>
+          <Typography level="body-sm">{date}</Typography>
           <ShareIconButton shareableLink={`https://donations-roan.vercel.app/donations/${id}`} />
         </div>
         <Typography level="body-sm">{description}</Typography>
@@ -50,9 +51,13 @@ function DonationCard({
         </AspectRatio>
         <CardContent orientation="horizontal">
           <div>
-            <Typography level="body-xs">גויס סה״כ</Typography>
+            <Typography level="body-xs">יעד גיוס:</Typography>
             <Typography fontSize="lg" fontWeight="lg">
-              ₪{price}
+              {price.toLocaleString("he-IL", {
+                style: "currency",
+                minimumFractionDigits: 0,
+                currency: "ILS",
+              })}
             </Typography>
           </div>
           <PayBoxButton paymentLink={paymentLink} />
