@@ -14,20 +14,24 @@ export type DonationCardProps = {
   paymentLink: string;
 };
 
-function DonationCard({ title, date, price, image, description, paymentLink }: DonationCardProps) {
+function DonationCard({ title, date, price, image, description, paymentLink, id }: DonationCardProps) {
   return (
     <Card
+      component={"a"}
+      href={`/donations/${id}`}
       sx={{
         width: "400px",
+        textDecoration: "none",
+        cursor: "pointer",
         maxWidth: "100%",
+        ":hover": {
+          boxShadow: "md",
+        },
       }}
     >
       <div>
         <Typography level="title-lg">{title}</Typography>
         <Typography level="body-md">{date}</Typography>
-        {/* <IconButton aria-label="bookmark Bahamas Islands" variant="plain" color="neutral" size="sm" sx={{ position: "absolute", top: "0.875rem", right: "0.5rem" }}>
-          <BookmarkAdd />
-        </IconButton> */}
       </div>
       <Typography level="body-sm">{description}</Typography>
 
