@@ -1,5 +1,5 @@
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
-import { Sheet } from "@mui/joy";
+import { Sheet, Typography } from "@mui/joy";
 import { Noto_Sans_Hebrew } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -26,6 +26,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }}
           >
             <Navbar />
+            <Typography level="h1">תרומות ציוד</Typography>
+            <Typography
+              level="body-xs"
+              sx={{
+                width: "400px",
+                maxWidth: "100%",
+                alignSelf: "center",
+              }}
+            >
+              * כל התרומות והכספים יועברו לקרן צה״ל <br /> * איננו אתר רשמי של צה״ל, אנחנו כאן רק כדי לנסות לעזור
+            </Typography>
             {children}
             <Analytics />
           </Sheet>

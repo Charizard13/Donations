@@ -1,6 +1,7 @@
-import { Sheet, Typography, Button } from "@mui/joy";
+import { Sheet, Typography, Button, Stack, SvgIcon, IconButton } from "@mui/joy";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { helpWhatsappLink } from "@/utils/consts";
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 
 export default function Navbar() {
   return (
@@ -19,21 +20,16 @@ export default function Navbar() {
           direction: "row",
         }}
       >
-        <Typography
-          level="h1"
-          component={"a"}
-          href="/"
-          sx={{
-            textDecoration: "none",
-            color: "inherit",
-          }}
-        >
-          תרומות ציוד
-        </Typography>
+        <Stack gap={1} direction={"row"} alignItems={"flex-end"}>
+          <IconButton href="/" color="primary" variant="soft">
+            <HomeRoundedIcon />
+          </IconButton>
+        </Stack>
         <Button
           color="success"
           component="a"
           href={helpWhatsappLink}
+          rel="noopener noreferrer"
           referrerPolicy="no-referrer"
           target="_blank"
           endDecorator={<WhatsAppIcon />}
@@ -49,16 +45,6 @@ export default function Navbar() {
           לקבלת סיוע
         </Button>
       </Sheet>
-      <Typography
-        level="body-xs"
-        sx={{
-          width: "400px",
-          maxWidth: "100%",
-          alignSelf: "center",
-        }}
-      >
-        * כל התרומות והכספים יועברו לקרן צה״ל <br /> * איננו אתר רשמי של צה״ל, אנחנו כאן רק כדי לנסות לעזור
-      </Typography>
     </>
   );
 }

@@ -20,7 +20,7 @@ export const donationsCards: DonationCardProps[] = [
     price: 30000,
     description: "מחלקה שנמצאת בחזית עם וסטים ישנים וללא מגנים קרמיים, כל עזרה בהשגת וסטים חדשים אבל הכי חשוב קרמי ל16 חיילים במחלקה יעזור מאוד",
     image: "https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/3.jpeg?t=2023-10-14T15%3A59%3A16.490Z",
-    paymentLink: "https://www.paypal.com/il/home",
+    paymentLink: "https://payboxapp.page.link/2HKboEFcFwYJ1ZoL7",
   },
   {
     id: "3",
