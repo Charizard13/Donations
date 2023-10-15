@@ -36,7 +36,7 @@ export const donationsCards: DonationCardProps[] = [
     title: "15 קסדות טקטיות - כפיר",
     date: "15/10/2023",
     price: 21000,
-    description: " קסדות ווסטים גולני עם מגן קרמי לכל חייל במחלקה יעזור להגן על חיילים במחלקה",
+    description: " קסדות טקטיות למחלקה , כל קסדה תעזור לנו להגן על חיילים במחלקה, תודה :)",
     image: "https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/5?t=2023-10-15T15%3A22%3A58.344Z",
     paymentLink: "https://payboxapp.page.link/AYwh2nhoEhnJGwEz5",
   },
