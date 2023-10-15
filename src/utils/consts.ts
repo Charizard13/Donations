@@ -32,15 +32,6 @@ export const donationsCards: DonationCardProps[] = [
     paymentLink: "https://payboxapp.page.link/gvrLKzu1xozyE6Jz8",
   },
   {
-    id: "3",
-    title: "15 קסדות 15 ווסטים - גולני",
-    date: "15/10/2023",
-    price: 45000,
-    description: " קסדות ווסטים גולני עם מגן קרמי לכל חייל במחלקה יעזור להגן על חיילים במחלקה",
-    image: "https://klvoddikzmytpbewxsir.supabase.co/storage/v1/object/public/donations/4?t=2023-10-15T15%3A19%3A52.574Z",
-    paymentLink: "https://payboxapp.page.link/gvrLKzu1xozyE6Jz8",
-  },
-  {
     id: "4",
     title: "15 קסדות טקטיות - כפיר",
     date: "15/10/2023",
