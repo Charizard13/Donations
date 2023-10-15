@@ -39,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               sx={{
                 width: "400px",
                 maxWidth: "100%",
+                textAlign: "center",
                 alignSelf: "center",
               }}
             >
