@@ -26,7 +26,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }}
           >
             <Navbar />
-            <Typography level="h1">תרומות ציוד</Typography>
+            <Typography
+              level="h1"
+              style={{
+                alignSelf: "center",
+              }}
+            >
+              תרומות ציוד
+            </Typography>
             <Typography
               level="body-xs"
               sx={{
