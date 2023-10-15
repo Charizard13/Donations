@@ -21,7 +21,7 @@ export default function Navbar() {
         }}
       >
         <Stack gap={1} direction={"row"} alignItems={"flex-end"}>
-          <IconButton href="/" color="primary" variant="solid">
+          <IconButton href="/" component="a" color="primary" variant="solid">
             <HomeRoundedIcon />
           </IconButton>
         </Stack>
