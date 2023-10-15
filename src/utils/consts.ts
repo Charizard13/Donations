@@ -41,3 +41,5 @@ export const donationsCards: DonationCardProps[] = [
     paymentLink: "https://payboxapp.page.link/AYwh2nhoEhnJGwEz5",
   },
 ];
+
+export const helpWhatsappLink = "https://wa.me/972525830613";
