@@ -21,7 +21,7 @@ export default function Navbar() {
         }}
       >
         <Stack gap={1} direction={"row"} alignItems={"flex-end"}>
-          <IconButton href="/" color="primary" variant="soft">
+          <IconButton href="/" color="primary" variant="solid">
             <HomeRoundedIcon />
           </IconButton>
         </Stack>
@@ -30,6 +30,13 @@ export default function Navbar() {
           component="a"
           href={helpWhatsappLink}
           rel="noopener noreferrer"
+          variant="soft"
+          sx={{
+            borderWidth: 6,
+            borderRadius: 6,
+            border: "1px solid",
+            borderColor: "success.500",
+          }}
           referrerPolicy="no-referrer"
           target="_blank"
           endDecorator={<WhatsAppIcon />}
