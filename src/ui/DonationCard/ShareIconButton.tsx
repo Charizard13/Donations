@@ -39,7 +39,7 @@ export default function ShareIconButton({ shareableLink }: ShareIconButtonProps)
         <IosShareRoundedIcon />
       </IconButton>
       <Toast.Provider swipeDirection="right">
-        <JoySnackbar open={open} onOpenChange={setOpen}>
+        <JoySnackbar open={open} onOpenChange={setOpen} color="success">
           <Typography>
             <b>הועתק ללוח</b>
           </Typography>

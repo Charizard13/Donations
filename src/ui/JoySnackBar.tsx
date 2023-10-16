@@ -23,7 +23,7 @@ const JoySnackbar = React.forwardRef<HTMLLIElement, Omit<AlertProps, "ref"> & To
   return (
     <Alert
       ref={ref}
-      variant="outlined"
+      variant="soft"
       color="neutral"
       {...props}
       component={Toast.Root}
