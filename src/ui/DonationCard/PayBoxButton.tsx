@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@mui/joy";
 
 type PayBoxButtonProps = {
@@ -8,14 +7,12 @@ type PayBoxButtonProps = {
 export default function PayBoxButton({ paymentLink }: PayBoxButtonProps) {
   return (
     <Button
-      variant="solid"
-      size="md"
-      onClick={(e) => {
-        e.stopPropagation();
-        window.open(paymentLink, "_blank");
-      }}
+      component="a"
+      href={paymentLink}
+      target="_blank"
+      rel="noopener noreferrer"
       color="primary"
-      aria-label="Explore Bahamas Islands"
+      aria-label="תרום עכשיו באמצעות Paybox"
       sx={{ mr: "auto", alignSelf: "center", fontWeight: 600 }}
     >
       תרומה באמצעות Paybox
